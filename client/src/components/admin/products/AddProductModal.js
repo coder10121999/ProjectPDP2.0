@@ -39,6 +39,8 @@ const AddProductDetail = ({ categories }) => {
     e.preventDefault();
     e.target.reset();
 
+    console.log('hi');
+
     if (!fData.pImage) {
       setFdata({ ...fData, error: "Please upload at least 2 image" });
       setTimeout(() => {
@@ -202,14 +204,14 @@ const AddProductDetail = ({ categories }) => {
                     ...fData,
                     error: false,
                     success: false,
-                    pImage: [...e.target.files],
+                    pImage: e.target.files[0],
                   })
                 }
                 type="file"
                 accept=".jpg, .jpeg, .png"
                 className="px-4 py-2 border focus:outline-none"
                 id="image"
-                multiple
+            
               />
             </div>
             {/* Most Important part for uploading multiple image */}

@@ -31,10 +31,11 @@ export const createProduct = async ({
 }) => {
   /* Most important part for uploading multiple image  */
   let formData = new FormData();
-  for (const file of pImage) {
-    formData.append("pImage", file);
-  }
+ // for (const file of pImage) {
+ //   formData.append("pImage", file);
+ // }
   /* Most important part for uploading multiple image  */
+  formData.append("pImage", pImage);
   formData.append("pName", pName);
   formData.append("pDescription", pDescription);
   formData.append("pStatus", pStatus);
