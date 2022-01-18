@@ -52744,7 +52744,7 @@ video {
   }
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 1300px) {
   .lg\:container {
     width: 100%;
   }
