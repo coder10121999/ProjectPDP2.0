@@ -6282,7 +6282,7 @@ video {
 }
 
 .text-2xl {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
 }
 
 .text-3xl {
@@ -52744,7 +52744,7 @@ video {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 2000px) {
   .lg\:container {
     width: 100%;
   }

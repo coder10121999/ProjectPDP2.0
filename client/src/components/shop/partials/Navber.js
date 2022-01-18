@@ -27,35 +27,50 @@ const Navber = (props) => {
       ? dispatch({ type: "cartModalToggle", payload: false })
       : dispatch({ type: "cartModalToggle", payload: true });
 
+      
+
   return (
     <Fragment>
       {/* Navber Section */}
-      <nav className="fixed top-0 w-full z-10 shadow-lg lg:shadow-none bg-white">
-        <div className="m-4 md:mx-12 md:my-6 grid grid-cols-4 lg:grid-cols-3">
-          <div className="hidden lg:block col-span-1 flex text-gray-600 mt-1">
+      <nav
+         className="fixed w-full z-10 shadow-lg lg:shadow-none bg-white">
+
+        <div className="m-4 md:mx-12 md:my-6 grid grid-cols-4 lg:grid-cols-3"
+          sx={{display:"flex",justifyContent:"space-evenly",flexDirection:"column"}}>
+
+          <div className="hidden lg:block col-span-1 flex text-gray-600 mt-1"
+            sx={{display:"flex",justifyContent:"space-evenly",flexDirection:"column",flexBasis:"30%"}}>
             <span
-              className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
+              className="hover:bg-gray-200 px-2 py-1 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
               onClick={(e) => history.push("/")}
             >
               Shop
             </span>
             <span
-              className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
+              className="hover:bg-gray-200 px-2 py-1 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
               onClick={(e) => history.push("/blog")}
             >
               Blog
             </span>
             <span
-              className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
+              className="hover:bg-gray-200 px-2 py-1 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
               onClick={(e) => history.push("/contact-us")}
             >
-              Contact us
+              ContactUs
+            </span>
+            <span
+              className="hover:bg-gray-200 px-2 py-1 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
+              onClick={(e) => history.push("/")}
+            >
+              Featured Artists
             </span>
           </div>
-          <div className="col-span-2 lg:hidden flex justify-items-stretch	 items-center">
+
+
+          <div className="col-span-3 lg:hidden flex	items-center px-0">
             <svg
               onClick={(e) => navberToggleOpen()}
-              className="col-span-1 lg:hidden w-8 h-8 cursor-pointer text-gray-600"
+              className="col-span-1 lg:hidden w-6 h-6 cursor-pointer text-gray-600"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -70,20 +85,24 @@ const Navber = (props) => {
             </svg>
             <span
               onClick={(e) => history.push("/")}
-              style={{ letterSpacing: "0.10rem" }}
-              className="flex items-left text-center font-bold uppercase text-gray-800 text-2xl cursor-pointer px-2 text-center"
-            >
-              Hayroo
+              style={{ letterSpacing: "0.10rem"}}
+              className="px-3 flex items-left text-center font-bold uppercase text-gray-800 text-2xl cursor-pointer text-center"
+              >
+              Art'n Creations
             </span>
           </div>
+
+
           <div
             onClick={(e) => history.push("/")}
             style={{ letterSpacing: "0.70rem" }}
             className="hidden lg:block flex items-left col-span-1 text-center text-gray-800 font-bold tracking-widest uppercase text-2xl cursor-pointer"
-          >
-            Hayroo
+            sx={{display:"flex",justifyContent:"space-evenly",flexDirection:"column",flexBasis:"30%"}}>
+            Art'n Creations
           </div>
-          <div className="flex items-right col-span-2 lg:col-span-1 flex justify-end">
+
+
+          <div className="flex items-right col-span-1 lg:col-span-1 flex justify-end">
             {/*  WishList Page Button */}
             <div
               onClick={(e) => history.push("/wish-list")}
@@ -358,14 +377,18 @@ const Navber = (props) => {
               </span>
             </div>
           </div>
+
         </div>
+
+
         <div
           className={
             data.navberHamburger && data.navberHamburger
               ? "px-1 pb-2 md:pb-0 md:px-10 lg:hidden"
               : "hidden px-1 pb-2 md:pb-0 md:px-10 lg:hidden"
           }
-        >
+          >
+
           <div className="col-span-1 flex flex-col text-gray-600">
             <span
               className="font-medium text-lg tracking-widest hover:text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-lg cursor-pointer"
@@ -383,9 +406,16 @@ const Navber = (props) => {
               className="font-medium text-lg tracking-widest hover:text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-lg cursor-pointer"
               onClick={(e) => history.push("/contact-us")}
             >
-              Contact us
+              ContactUs
+            </span>
+            <span
+              className="font-medium text-lg tracking-widest hover:text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-lg cursor-pointer"
+              onClick={(e) => history.push("/contact-us")}
+            >
+            Featured Artists
             </span>
           </div>
+          
         </div>
       </nav>
       {/* End Navber Section */}
