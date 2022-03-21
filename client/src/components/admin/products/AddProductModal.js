@@ -39,7 +39,7 @@ const AddProductDetail = ({ categories }) => {
     e.preventDefault();
     e.target.reset();
 
-    console.log(fData);
+   // console.log(fData);
 
     if (!fData.pImage) {
       setFdata({ ...fData, error: "Please upload at least 2 image" });

@@ -37,7 +37,7 @@ const EditProductModal = (props) => {
     if (responseData.Categories) {
       setCategories(responseData.Categories);
     }
-    console.log(responseData.Categories);
+   // console.log(responseData.Categories);
   };
 
   useEffect(() => {
