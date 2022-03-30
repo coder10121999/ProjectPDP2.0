@@ -102,7 +102,7 @@ const Navber = (props) => {
           </div>
 
 
-          <div className="flex items-right col-span-1 lg:col-span-1 flex justify-end">
+          <div className="flex items-right col-span-1 lg:col-span-1 justify-end">
             {/*  WishList Page Button */}
             <div
               onClick={(e) => history.push("/wish-list")}
@@ -410,7 +410,7 @@ const Navber = (props) => {
             </span>
             <span
               className="font-medium text-lg tracking-widest hover:text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-lg cursor-pointer"
-              onClick={(e) => history.push("/contact-us")}
+              onClick={(e) => history.push("/")}
             >
             Featured Artists
             </span>

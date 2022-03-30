@@ -87449,3 +87449,13 @@ video {
             animation: bounce 1s infinite;
   }
 }
+.sliderImg{
+  width: 100% !important;
+  height: 815px !important;
+}
+.productSection{
+  padding-top: 20px !important;
+  padding-left: 720px !important;
+  padding-right: 720px !important;
+  padding-bottom: 20px !important;
+}

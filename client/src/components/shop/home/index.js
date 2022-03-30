@@ -1,4 +1,5 @@
 import React, { Fragment, createContext, useReducer } from "react";
+import Divider from '@mui/material/Divider';
 import Layout from "../layout";
 import Slider from "./Slider";
 import ProductCategory from "./ProductCategory";
@@ -16,6 +17,12 @@ const HomeComponent = () => {
         <ProductCategory />
       </section>
       {/* Product Section */}
+      <section className="productSection">
+      <span
+      style={{ letterSpacing: "0.10rem"}}
+      className="flex items-left text-center font-bold uppercase text-gray-800 text-2xl text-center"
+      >Popular HandiCraft Paintings</span>
+      </section>
       <section className="m-4 md:mx-8 md:my-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <SingleProduct />
       </section>
