@@ -8,13 +8,13 @@ import {
   PageNotFound,
   ProductDetails,
   ProductByCategory,
+ // ProductByArtist,
   CheckoutPage,
 } from "./shop";
-import Blog from "./shop/home/Blog";
 import { DashboardAdmin, Categories, Products, Orders } from "./admin";
 import { UserProfile, UserOrders, SettingUser } from "./shop/dashboardUser";
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Blog from "./shop/home/Blog";
 import ContactUs from "./shop/home/ContactUs";
 
 /* Routing All page will be here */
@@ -33,6 +33,11 @@ const Routes = (props) => {
           path="/products/category/:catId"
           component={ProductByCategory}
         />
+        {/* <Route
+          exact
+          path="/products/artist/:catId"
+          component={ProductByArtist}
+        /> */}
         <CartProtectedRoute
           exact={true}
           path="/checkout"
@@ -51,6 +56,11 @@ const Routes = (props) => {
           path="/admin/dashboard/categories"
           component={Categories}
         />
+        <AdminProtectedRoute
+          exact={true}
+          path="/admin/dashboard/artists"
+          component={Artists}
+        /> 
         <AdminProtectedRoute
           exact={true}
           path="/admin/dashboard/products"

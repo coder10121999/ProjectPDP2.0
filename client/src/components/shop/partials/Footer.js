@@ -29,7 +29,7 @@ const Footer = (props) => {
             </div>
             <div>
               <span
-              className="font-medium text-lg rounded-lg px-3 py-3 ">Made in India</span>
+              className="font-medium text-lg rounded-lg px-3 py-2 ">Made in India</span>
             </div>
 
         {/* <FontAwesomeIcon icon="ta-heart" size="lg" /> */}

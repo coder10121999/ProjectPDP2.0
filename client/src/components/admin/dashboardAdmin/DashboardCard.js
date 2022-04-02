@@ -137,6 +137,28 @@ const DashboardCard = (props) => {
           </div>
           <div className="text-lg font-medium">Categories</div>
         </div>
+        <div className="flex flex-col justify-center items-center col-span-1 bg-white p-6 shadow-lg hover:shadow-none cursor-pointer transition-all duration-300 ease-in border-b-4 border-opacity-0 hover:border-opacity-100 border-orange-200">
+          <div className="bg-orange-200 p-2 cursor-pointer rounded-full">
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+              />
+            </svg>
+          </div>
+          <div className="text-2xl font-semibold">
+            {data ? data.totalData.Artists : 0}
+          </div>
+          <div className="text-lg font-medium">Artists</div>
+        </div>
       </div>
       {/* End Card */}
     </Fragment>
