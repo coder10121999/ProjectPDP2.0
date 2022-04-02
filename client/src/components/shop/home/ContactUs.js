@@ -1,8 +1,18 @@
-import React from "react";
-
+import React,{Fragment} from "react";
+import { Navber, Footer} from "../partials";
+import ContactInfo from "./ContactInfo";
 const ContactUs =()=>{
     return(
-        <h2>Contact Us</h2>
+        <Fragment>
+            <div className="flex-grow">
+                <Navber />
+                <ContactInfo/>
+            </div>
+            
+            <Footer/>
+        </Fragment>
+        
+           
     );
 };
 export default ContactUs;

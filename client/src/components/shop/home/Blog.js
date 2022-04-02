@@ -1,8 +1,19 @@
-import React from "react";
-
+import React,{Fragment} from "react";
+import {Card, Button} from "reactstrap";
+import { Navber, Footer} from "../partials";
+import BlogInfo from "./BlogInfo";
 const Blog =()=>{
     return(
-        <h2>Blog</h2>
+        <Fragment>
+            <div className="flex-grow">
+                <Navber />
+                <BlogInfo/>
+            </div>
+            
+            <Footer/>
+        </Fragment>
+        
+           
     );
 };
 export default Blog;
