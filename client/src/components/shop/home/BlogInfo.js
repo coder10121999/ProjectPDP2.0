@@ -4,7 +4,7 @@ const BlogInfo =()=>{
     return(
         <div style={{marginTop:"10rem",display:"flex",justifyContent:"center"}}>
             <Card>
-                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image " />
+                <CardImg top style={{width:"200px"}} src="/images/blog.jpg" alt="Card image " />
                 <CardBody>
                 <CardTitle>Card title</CardTitle>
                 <CardSubtitle>Card subtitle</CardSubtitle>
@@ -13,7 +13,7 @@ const BlogInfo =()=>{
                 </CardBody>
             </Card>
             <Card>
-                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image " />
+                <CardImg top style={{width:"200px"}} src="/images/blog.jpg" alt="Card image " />
                 <CardBody>
                 <CardTitle>Card title</CardTitle>
                 <CardSubtitle>Card subtitle</CardSubtitle>
