@@ -11,10 +11,12 @@ import {
  // ProductByArtist,
   CheckoutPage,
 } from "./shop";
+import Blog from "./shop/home/Blog";
 import { DashboardAdmin, Categories, Products, Orders, Artists } from "./admin";
 import { UserProfile, UserOrders, SettingUser } from "./shop/dashboardUser";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ContactUs from "./shop/home/ContactUs";
 
 /* Routing All page will be here */
 const Routes = (props) => {
@@ -23,6 +25,8 @@ const Routes = (props) => {
       <Switch>
         {/* Shop & Public Routes */}
         <Route exact path="/" component={Home} />
+        <Route exact path="/blog" component={Blog} />
+        <Route exact path="/contact-us" component={ContactUs} />
         <Route exact path="/wish-list" component={WishList} />
         <Route exact path="/products/:id" component={ProductDetails} />
         <Route
