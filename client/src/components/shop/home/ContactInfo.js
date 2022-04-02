@@ -5,11 +5,14 @@ const ContactInfo =()=>{
         <div style={{marginTop:"8rem",display:"flex",justifyContent:"center"}}>
             <div style={{paddingLeft:"6rem",paddingRight:"6rem",paddingTop:"10rem",width:"1000px"}}>
                 <h2>Contact Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris a diam maecenas sed enim ut sem viverra aliquet. Elit duis tristique sollicitudin nibh sit. At lectus urna duis convallis convallis tellus id. Elementum facilisis leo vel fringilla est ullamcorper.</p>
-                <Button  color="primary">Learn more</Button>
+                <p>Address: Kalam Hall of Residence, IIITDM Kurnool</p>
+                <p>Phone: 6388505972</p>
+                <p>Name: Devendu Tiwari</p>
+                <p>Email: devendut1012@gmail.com</p>
+                <Button  color="primary">Know more about us</Button>
             </div>
             <div>
-                <img src="images/contactus.png" width={1000} height={1000}/>
+                <img src="https://media.istockphoto.com/photos/phone-and-email-icons-on-wooden-cubes-with-contact-us-text-on-blue-picture-id1271752802?b=1&k=20&m=1271752802&s=170667a&w=0&h=sMEPVY49FAy2UHkhyQLWDHlAhYsR2F2NDkNlSEteO3s=" width={1000} height={1000}/>
             </div>
         </div>  
            
