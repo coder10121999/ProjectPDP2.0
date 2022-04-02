@@ -11,11 +11,15 @@ import {
  // ProductByArtist,
   CheckoutPage,
 } from "./shop";
+<<<<<<< HEAD
 import Blog from "./shop/home/Blog";
 import { DashboardAdmin, Categories, Products, Orders, Artists } from "./admin";
+=======
+import { DashboardAdmin, Categories, Products, Orders } from "./admin";
+>>>>>>> cb293a4b44756a1c02f6d127b814a783ab471d97
 import { UserProfile, UserOrders, SettingUser } from "./shop/dashboardUser";
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Blog from "./shop/home/Blog";
 import ContactUs from "./shop/home/ContactUs";
 
 /* Routing All page will be here */
