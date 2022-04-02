@@ -8,9 +8,10 @@ import {
   PageNotFound,
   ProductDetails,
   ProductByCategory,
+ // ProductByArtist,
   CheckoutPage,
 } from "./shop";
-import { DashboardAdmin, Categories, Products, Orders } from "./admin";
+import { DashboardAdmin, Categories, Products, Orders, Artists } from "./admin";
 import { UserProfile, UserOrders, SettingUser } from "./shop/dashboardUser";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -29,6 +30,11 @@ const Routes = (props) => {
           path="/products/category/:catId"
           component={ProductByCategory}
         />
+        {/* <Route
+          exact
+          path="/products/artist/:catId"
+          component={ProductByArtist}
+        /> */}
         <CartProtectedRoute
           exact={true}
           path="/checkout"
@@ -47,6 +53,11 @@ const Routes = (props) => {
           path="/admin/dashboard/categories"
           component={Categories}
         />
+        <AdminProtectedRoute
+          exact={true}
+          path="/admin/dashboard/artists"
+          component={Artists}
+        /> 
         <AdminProtectedRoute
           exact={true}
           path="/admin/dashboard/products"
