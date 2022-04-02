@@ -46,7 +46,7 @@ const Navber = (props) => {
             >
               Shop
             </span>
-            <span
+            {/* <span
               className="hover:bg-gray-200 px-2 py-1 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
               onClick={(e) => history.push("/blog")}
             >
@@ -57,6 +57,12 @@ const Navber = (props) => {
               onClick={(e) => history.push("/contact-us")}
             >
               ContactUs
+            </span> */}
+            <span
+              className="hover:bg-gray-200 px-2 py-1 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
+              onClick={(e) => history.push("/")}
+            >
+              E-Auction
             </span>
             <span
               className="hover:bg-gray-200 px-2 py-1 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
@@ -396,7 +402,7 @@ const Navber = (props) => {
             >
               Shop
             </span>
-            <span
+            {/* <span
               className="font-medium text-lg tracking-widest hover:text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-lg cursor-pointer"
               onClick={(e) => history.push("/blog")}
             >
@@ -407,6 +413,12 @@ const Navber = (props) => {
               onClick={(e) => history.push("/contact-us")}
             >
               ContactUs
+            </span> */}
+            <span
+              className="font-medium text-lg tracking-widest hover:text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-lg cursor-pointer"
+              onClick={(e) => history.push("/")}
+            >
+            E-Auction
             </span>
             <span
               className="font-medium text-lg tracking-widest hover:text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-lg cursor-pointer"
