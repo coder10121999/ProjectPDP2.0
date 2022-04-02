@@ -1,5 +1,5 @@
 import React, { Fragment, createContext, useReducer } from "react";
-import Divider from '@mui/material/Divider';
+//import Divider from '@mui/material/Divider';
 import Layout from "../layout";
 import Slider from "./Slider";
 import ProductCategory from "./ProductCategory";
