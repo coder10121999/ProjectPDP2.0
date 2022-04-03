@@ -1,5 +1,5 @@
-import React, { Fragment, useContext } from "react";
-import { useHistory, useLocation } from "react-router-dom";
+import React, { Fragment, useContext, useState, useEffect } from "react";
+import { useHistory, useLocation, Link } from "react-router-dom";
 import "./style.css";
 
 import { logout } from "./Action";
@@ -9,6 +9,15 @@ import { isAdmin } from "../auth/fetchApi";
 const Navber = (props) => {
   const history = useHistory();
   const location = useLocation();
+
+  const [clicked, setClicked] = useState(false);
+
+  useEffect(() => {
+    if (clicked) {
+      // do something meaningful, Promises, if/else, whatever, and then
+      window.location.assign('http://localhost:3001');
+    }
+  });
 
   const { data, dispatch } = useContext(LayoutContext);
 
@@ -60,7 +69,7 @@ const Navber = (props) => {
             </span> */}
             <span
               className="hover:bg-gray-200 px-2 py-1 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
-              onClick={(e) => history.push("/")}
+              onClick={() => setClicked(true)}
             >
               E-Auction
             </span>
