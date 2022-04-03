@@ -58,7 +58,7 @@ const SingleProduct = (props) => {
   return (
     
     <Fragment>
-     
+      {console.log(products)}
       {products && products.length > 0 ? (
          
         products.map((item, index) => {

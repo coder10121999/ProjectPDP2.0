@@ -16,6 +16,7 @@ import { UserProfile, UserOrders, SettingUser } from "./shop/dashboardUser";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Blog from "./shop/home/Blog";
 import ContactUs from "./shop/home/ContactUs";
+import featuredArtist from "./shop/home/featuredartist";
 
 /* Routing All page will be here */
 const Routes = (props) => {
@@ -26,6 +27,7 @@ const Routes = (props) => {
         <Route exact path="/" component={Home} />
         <Route exact path="/blog" component={Blog} />
         <Route exact path="/contact-us" component={ContactUs} />
+        <Route exact path="/featuredartist" component={featuredArtist} />
         <Route exact path="/wish-list" component={WishList} />
         <Route exact path="/products/:id" component={ProductDetails} />
         <Route
