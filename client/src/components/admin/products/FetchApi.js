@@ -72,6 +72,8 @@ export const editProduct = async (product) => {
   formData.append("pOffer", product.pOffer);
   formData.append("pImages", product.pImages);
 
+  console.log(product.pImages);
+
   try {
     let res = await axios.post(`${apiURL}/api/product/edit-product`, formData);
     return res.data;

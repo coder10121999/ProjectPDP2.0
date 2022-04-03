@@ -211,16 +211,16 @@ const EditProductModal = (props) => {
                     src={`${apiURL}/uploads/products/${editformData.pImages[0]}`}
                     alt="productImage"
                   />
-                  <img
+                  {/* <img
                     className="h-16 w-16 object-cover"
                     src={`${apiURL}/uploads/products/${editformData.pImages[1]}`}
                     alt="productImage"
-                  />
+                  /> */}
                 </div>
               ) : (
                 ""
               )}
-              <span className="text-gray-600 text-xs">Must need 2 images</span>
+              <span className="text-gray-600 text-xs">Must need an image</span>
               <input
                 onChange={(e) =>
                   setEditformdata({

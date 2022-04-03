@@ -63,7 +63,7 @@ export const editArtist = async (cId, des, status) => {
 export const deleteArtist = async (cId) => {
   try {
     let res = await axios.post(
-      `${apiURL}/api/category/delete-artist`,
+      `${apiURL}/api/artist/delete-artist`,
       { cId },
       Headers()
     );

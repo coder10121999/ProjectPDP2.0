@@ -114,7 +114,7 @@ class Product {
       pImages,
     } = req.body;
     let editImages = req.files;
-
+    console.log(editImages.length);
     // Validate other fileds
     if (
       !pId |
@@ -135,10 +135,7 @@ class Product {
       });
     } 
     // Validate Update Images
-    else if (editImages && editImages.length == 1) {
-      Product.deleteImages(editImages, 'file');
-      return res.json({ error: "Must need to provide 2 images" });
-    } else {
+    else {
       let editData = {
         pName,
         pDescription,
@@ -157,6 +154,7 @@ class Product {
         Product.deleteImages(pImages.split(','), 'string');
       }
       try {
+        console.log(editData);
         let editProduct = productModel.findByIdAndUpdate(pId, editData);
         editProduct.exec((err) => {
           if (err) console.log(err);
